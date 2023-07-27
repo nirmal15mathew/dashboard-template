@@ -1,18 +1,26 @@
-<script>
-    import "./sidebar.css"
-    let menu_items = ["Home", "Dashboard", "Profile"]
-    let active_index = 0
+<script lang="ts">
+    import SidebarItem from "./SidebarItem.svelte";
+    interface MenuItem {
+        label: String;
+        path: string;
+    }
+    export let menu_items: MenuItem[] = [];
+    export let current_path: string = "";
 </script>
-<div class="bg-gray-100 p-2 rounded-md dark:bg-slate-600">
-    <ul class="flex gap-2 flex-col">
-        {#each menu_items as item, i}
-        <li>
-            <a href={i != 0 ? item.toLocaleLowerCase(): "/"}>
-                <div class={i === active_index ? "sidebar-item is-active" : "sidebar-item"}>
-                    {item}
-                </div>
-            </a>
-        </li>
-        {/each}
-    </ul>
+
+<div class="bg-gray-100 p-2 rounded-md dark:bg-slate-600 shadow grid grid-rows-sidebar">
+    <div>
+        <ul class="flex gap-2 flex-col">
+            {#each menu_items as item}
+                <li>
+                    <a href={item.path}>
+                        <SidebarItem label={item.label} isActive={item.path == current_path}></SidebarItem>
+                    </a>
+                </li>
+            {/each}
+        </ul>
+    </div>
+    <div class="flex flex-col justify-end">
+        <SidebarItem label="Logout"></SidebarItem>
+    </div>
 </div>

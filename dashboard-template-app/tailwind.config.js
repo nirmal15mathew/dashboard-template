@@ -7,7 +7,8 @@ export default {
         'layout': 'minmax(200px, 0.5fr) 2fr',
       },
       gridTemplateRows: {
-        'main': '0.5fr 4fr'
+        'main': '0.5fr 4fr',
+        'sidebar': '2fr minmax(100px, 0.5fr)'
       }
     },
   },
