@@ -15,7 +15,7 @@
     <div class="grid">
         <slot name="header"></slot>
     </div>
-    <div class="mt-2">
+    <div class="mt-4">
         <ul class="flex gap-2 flex-col">
             {#each menu_items as item}
                 <li>

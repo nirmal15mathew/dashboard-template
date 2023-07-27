@@ -10,7 +10,7 @@
             path: "/",
             iconComponent: HomeIcon,
             iconProps: {
-                size: "1.2x"
+                size: "1.3x"
             }
         },
         {
@@ -18,7 +18,7 @@
             path: "/dashboard",
             iconComponent: BarChart2Icon,
             iconProps: {
-                size: "1.2x"
+                size: "1.3x"
             }
         },
         {
@@ -26,7 +26,7 @@
             path: "/settings",
             iconComponent: SettingsIcon,
             iconProps: {
-                size: "1.2x"
+                size: "1.3x"
             }
         },
         {
@@ -34,7 +34,7 @@
             path: "/profile",
             iconComponent: UserIcon,
             iconProps: {
-                size: "1.2x"
+                size: "1.3x"
             }
         },
     ];
