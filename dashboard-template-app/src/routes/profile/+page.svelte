@@ -7,7 +7,7 @@
 </svelte:head>
 <MainArea>
     <h1 slot="area-title">
-        Nirmal Thomas
+        Profile
     </h1>
     <main slot="main-area">
         

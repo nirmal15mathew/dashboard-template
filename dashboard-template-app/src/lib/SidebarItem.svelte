@@ -1,7 +1,10 @@
 <script lang="ts">
+    import type { SvelteComponent } from "svelte";
     import "./sidebar.css"
     export let label: String = "";
     export let isActive: boolean = false;
+    export let icon: ConstructorOfATypedSvelteComponent;
+    export let iconProps: Object;
 </script>
 
 <div
@@ -9,5 +12,10 @@
         ? "sidebar-item is-active"
         : "sidebar-item"}
 >
-    {label}
+    <span>
+        <svelte:component this={icon} {...iconProps}></svelte:component>
+    </span>
+    <span class="px-2">
+        {label}
+    </span>
 </div>
