@@ -11,7 +11,7 @@
     export let current_path: string = "";
 </script>
 
-<div class="bg-gray-100 p-2 rounded-md dark:bg-slate-600 shadow grid grid-rows-sidebar">
+<div class="bg-gray-50 p-2 rounded-md dark:bg-slate-600 shadow grid grid-rows-sidebar">
     <div class="grid">
         <slot name="header"></slot>
     </div>

@@ -40,7 +40,7 @@
     ];
 </script>
 
-<div class="grid grid-cols-layout h-screen bg-slate-50 dark:bg-gray-800">
+<div class="grid grid-cols-layout h-screen bg-slate-100 dark:bg-gray-800">
     <!-- Sidebar -->
     <div class="grid grid-rows-1 p-2">
         <Sidebar

@@ -3,5 +3,7 @@
 
 </script>
 <MainArea>
-    
+    <header slot="area-title">
+        Settings
+    </header>
 </MainArea>
